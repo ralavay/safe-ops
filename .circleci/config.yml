@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: koalaman/shellcheck-alpine:latest
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run: shellcheck *.sh
