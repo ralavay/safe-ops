@@ -12,9 +12,6 @@ if echo "$DANGERROUS_OPS" | grep -q "$1"; then
     if [ "${ans:-N}" != yes ]; then
         exit 1
     fi
-    $HELM_BIN_PATH "$@"
-else
-    $HELM_BIN_PATH "$@"
 fi
 
-exit 0
+$HELM_BIN_PATH "$@"

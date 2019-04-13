@@ -12,9 +12,6 @@ if echo "$DANGERROUS_OPS" | grep -q "$1"; then
     if [ "${ans:-N}" != yes ]; then
         exit 1
     fi
-    $KUBECTL_BIN_PATH "$@"
-else
-    $KUBECTL_BIN_PATH "$@"
 fi
 
-exit 0
+$KUBECTL_BIN_PATH "$@"
