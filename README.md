@@ -1,5 +1,7 @@
 # Kube-it-safe
 
+[![CircleCI](https://circleci.com/gh/ralavay/k8s-safety.svg?style=svg)](https://circleci.com/gh/ralavay/k8s-safety)
+
 Some simple scripts to wrap command like `kubectl`, `helm`, etc with confirmation step for dangerous operations like `delete` or `modify` a deployment or a release, etc.
 
 ## Usage
