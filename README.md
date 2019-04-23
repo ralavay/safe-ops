@@ -1,5 +1,6 @@
 # Kube-it-safe
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/67934c32a15a4bc79afb40d0584fcc5e)](https://app.codacy.com/app/ralavay/k8s-safety?utm_source=github.com&utm_medium=referral&utm_content=ralavay/k8s-safety&utm_campaign=Badge_Grade_Dashboard)
 [![CircleCI](https://circleci.com/gh/ralavay/k8s-safety.svg?style=svg)](https://circleci.com/gh/ralavay/k8s-safety)
 
 Some simple scripts to wrap command like `kubectl`, `helm`, etc with confirmation step for dangerous operations like `delete` or `modify` a deployment or a release, etc.
