@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 KUBECTL_BIN_PATH=$(command -v kubectl)
-DANGERROUS_OPS="del delete exec edit apply create patch replace convert proxy attach cp auth lable drain taint uncordon cordon rollout scale autoscale run set"
+SAFE_OPS="get describe version"
 
-if echo "$DANGERROUS_OPS" | grep -q "$1"; then
+if echo "$SAFE_OPS" | grep -qv "$1"; then
     echo "--------------------------------------------------------------------------------"
     echo "- K8s cluster:    $(kubectl config current-context)"
     echo "--------------------------------------------------------------------------------"
