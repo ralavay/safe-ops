@@ -1,4 +1,4 @@
-# Kube-it-safe
+# Safe Ops
 
 [![CircleCI](https://circleci.com/gh/ralavay/safe-ops.svg?style=svg)](https://circleci.com/gh/ralavay/safe-ops)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/67934c32a15a4bc79afb40d0584fcc5e)](https://app.codacy.com/app/ralavay/safe-ops)
