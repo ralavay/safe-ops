@@ -17,6 +17,9 @@ alias kubectl="/your/workspace/path/scripts/kubectl.sh"
 
 # helm
 alias helm="/your/workspace/path/scripts/helm.sh"
+
+# rm
+alias helm="/your/workspace/path/scripts/rm.sh"
 ```
 
 Source `~/.profile` or `~/.bashrc` then when you try to delete/exec/edit something with `kubectl` or `helm` you will see this

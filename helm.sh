@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 HELM_BIN_PATH=$(command -v helm)
-DANGERROUS_OPS="install upgrade del delete"
+SAFE_OPS="completion diff fetch get history ls list lint test status version"
 
-if echo "$DANGERROUS_OPS" | grep -q "$1"; then
+if echo "$SAFE_OPS" | grep -qv "$1"; then
     echo "--------------------------------------------------------------------------------"
     echo "- K8s cluster:    $(kubectl config current-context)"
     echo "--------------------------------------------------------------------------------"
