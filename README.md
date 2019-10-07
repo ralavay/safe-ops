@@ -33,7 +33,7 @@ Source `~/.profile` or `~/.bashrc` then when you try to delete/exec/edit somethi
 ```bash
 $ kubectl delete pod/awesome-pod-1
 ----------------------------------------------------------
-- K8s cluster:    k8s.production.seriously.com
+- Current cluster :    k8s.production.seriously.com
 ----------------------------------------------------------
 Are you sure? (Only 'yes' will be accepted to approve)
 ```
@@ -41,7 +41,7 @@ Are you sure? (Only 'yes' will be accepted to approve)
 ```bash
 $ helm delete awesome-app
 ----------------------------------------------------------
-- K8s cluster:    k8s.staging.seriously.com
+- Current cluster :    k8s.staging.seriously.com
 ----------------------------------------------------------
 Are you sure? (Only 'yes' will be accepted to approve)
 ```
