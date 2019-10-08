@@ -15,7 +15,7 @@ Support
 
 Clone the repo somewhere like `/your/workspace/path/`
 
-Then update your `~/.profile` or `~/.bashrc` with some alias
+Then update your `~/.profile` or `~/.bashrc` with some aliases
 
 ```bash
 # kubectl
@@ -25,13 +25,13 @@ alias kubectl="/your/workspace/path/kubectl.sh"
 alias helm="/your/workspace/path/helm.sh"
 
 # rm
-alias helm="/your/workspace/path/rm.sh"
+alias rm="/your/workspace/path/rm.sh"
 ```
 
 Source `~/.profile` or `~/.bashrc` then when you try to delete/exec/edit something with `kubectl` or `helm` you will see this
 
 ```bash
-$ kubectl delete pod/awesome-pod-1
+$ kubectl delete pod/production-pod-1
 ----------------------------------------------------------
 - Current cluster :    k8s.production.seriously.com
 ----------------------------------------------------------
